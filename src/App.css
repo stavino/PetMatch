@@ -1,21 +1,13 @@
 .App {
-  text-align: center;
+  
+text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,16 +15,294 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+body {
+  background: #CCFBFE;
+  font-family: sans-serif;
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #000000;
+  font-size: 28px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1, 1.1);
+  cursor: grab;
+}
+
+/* Add some padding inside the card container */
+.card {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  background: lightpink;
+  border-style: groove;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  margin: auto;
+overflow: hidden;
+ position: fixed;
+ margin-bottom: 15%;
+ margin-top: 08%;
+margin-left: -20%;
+
+
+ border-color: black;
+ 
+}
+
+
+.image-container{
+overflow: hidden;
+margin: auto;
+height: 200px;
+width: 200px;
+border-style: groove;
+border-radius: 10px;
+
+
+
+}
+  .card-image {
+  width: 100%;
+  height: auto
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 57%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 30%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 30%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text-area{
+background: white;
+border-color: black;
+border-style: groove;
+-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+
+}
+
+
+
+.title {
+font-family: cursive;
+font-size: 64px;
+position: absolute;
+margin: auto;
+left: 40%;
+right: 40%;
+top: 5%;
+
+
+}
+
+
+
+
+
+
+
+
+
+#saved-pet-container {
+margin: auto;
+margin-top: 10%;
+position: relative;
+color: black;
+
+
+
+
+
+}
+
+.myPets{
+
+border-style: groove;
+-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: lightpink;
+
+
+
+}
+
+.comments{
+background-color: white;
+margin: auto;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 06%;
+border-style: groove;
+border-color: black;
+-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+}
+.comment{
+
+font-style: italic;
+
+
+
+
+}
+.saved-card{
+
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  background: lightpink;
+  border-style: groove;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  margin: auto;
+overflow: hidden;
+ position: relative;
+}
+#home{
+
+position: absolute;
+right: 90%;
+color: white;
+text-decoration: none;
+
+
+}
+#swipe{
+  position: absolute;
+  right: 70%;
+  color: white;
+  text-decoration: none;
+}
+
+#home:hover{
+
+  background: rgb(226, 128, 142);
+  background-image: -webkit-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -moz-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -ms-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -o-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: linear-gradient(to bottom, rgb(226, 128, 142), rgb(201, 81, 99));
+  text-decoration: underline;
+}
+#swipe:hover{
+  background: rgb(226, 128, 142);
+  background-image: -webkit-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -moz-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -ms-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -o-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: linear-gradient(to bottom, rgb(226, 128, 142), rgb(201, 81, 99));
+  text-decoration: underline;
+}
+#saved-pets-tag{
+
+  position: absolute;
+  right: 45%;
+  color: white;
+  text-decoration: none;
+
+}
+#saved-pets-tag:hover{
+  background: rgb(226, 128, 142);
+  background-image: -webkit-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -moz-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -ms-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -o-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: linear-gradient(to bottom, rgb(226, 128, 142), rgb(201, 81, 99));
+  text-decoration: underline;
+}
+#test-tag{
+  position: absolute;
+  right: 15%;
+  color: white;
+  text-decoration: none;
+
+
+
+
+}
+#test-tag:hover{
+  background: rgb(226, 128, 142);
+  background-image: -webkit-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -moz-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -ms-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -o-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: linear-gradient(to bottom, rgb(226, 128, 142), rgb(201, 81, 99));
+  text-decoration: underline;
+
+
+}
+
+.testimonial-box:hover{
+  background: rgb(226, 128, 142);
+  background-image: -webkit-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -moz-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -ms-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: -o-linear-gradient(top, rgb(226, 128, 142), rgb(201, 81, 99));
+  background-image: linear-gradient(to bottom, rgb(226, 128, 142), rgb(201, 81, 99));
+  text-decoration: underline;
+
+  
 }

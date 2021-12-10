@@ -1,0 +1,34 @@
+{
+  "Testimonials": [
+    {
+      "id": 1,
+      "comment": "Just what I was looking for.",
+      "name": "Zonnya Z."
+    },
+    {
+      "id": 2,
+      "comment": "I can't imagine finding a pet any other way. PetSwipe Makes it TOO easy!",
+      "name": "Jack F."
+    },
+    {
+      "id": 3,
+      "comment": "Thanks to PetSwipe I found my fur-ever friend. I would highly recommend this app to anyone looking for a new pet.",
+      "name": "Ted M."
+    },
+    {
+      "id": 4,
+      "comment": "Love it!",
+      "name": "Cali K."
+    },
+    {
+      "id": 5,
+      "comment": "I'm going to end up with 30 dogs.",
+      "name": "Johnny P."
+    },
+    {
+      "id": 6,
+      "comment": "Simply Amazing.",
+      "name": "Sean F."
+    }
+  ]
+}
